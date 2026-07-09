@@ -1,0 +1,21 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.3
+
+# Required by the existing ML pipeline modules this backend orchestrates
+# (build_prediction_features.py, predict_player_performance.py,
+# series_simulator.py) -- versions intentionally left unpinned here so
+# they don't conflict with whatever the pipeline was originally trained
+# and validated against. Pin these to match your training environment.
+pandas
+numpy
+scikit-learn
+joblib
+
+xgboost
+catboost
+
+# Optional (only if your project imports them)
+scipy
+matplotlib
