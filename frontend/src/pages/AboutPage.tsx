@@ -27,7 +27,7 @@ export function AboutPage() {
       <p className="text-sm leading-relaxed text-slate-450">
         This system predicts Test cricket batting performance for the Ashes rivalry between
         England and Australia. Given a player, matchup, venue, and innings context, the
-        underlying model estimates the runs that player is likely to score — either for a single
+        underlying model estimates the runs that player is likely to score - either for a single
         innings or across an entire simulated series.
       </p>
 
